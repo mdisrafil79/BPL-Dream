@@ -1,0 +1,92 @@
+[
+  {
+    "PlayerName": "Virat Kohli",
+    "PlayerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/383500/383539.jpg",
+    "Origin": "India",
+    "PlayerType": "Batsman",
+    "BowlingStyle": "Right-arm medium",
+    "battingStyle": "Right-hand bat",
+    "Price": "15 Cr"
+  },
+  {
+    "PlayerName": "Ben Stokes",
+    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
+    "Origin": "England",
+    "PlayerType": "All-Rounder",
+    "BowlingStyle": "Right-arm fast-medium",
+    "battingStyle": "Left-hand bat",
+    "Price": "16.25 Cr"
+  },
+  {
+    "PlayerName": "Jasprit Bumrah",
+    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
+    "Origin": "India",
+    "PlayerType": "Bowler",
+    "BowlingStyle": "Right-arm fast",
+    "battingStyle": "Right-hand bat",
+    "Price": "12 Cr"
+  },
+  {
+    "PlayerName": "Rashid Khan",
+    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
+    "Origin": "Afghanistan",
+    "PlayerType": "Bowler",
+    "BowlingStyle": "Right-arm leg break",
+    "battingStyle": "Right-hand bat",
+    "Price": "15 Cr"
+  },
+  {
+    "PlayerName": "Jos Buttler",
+    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
+    "Origin": "England",
+    "PlayerType": "Wicket-Keeper Batsman",
+    "BowlingStyle": "None",
+    "battingStyle": "Right-hand bat",
+    "Price": "10 Cr"
+  },
+  {
+    "PlayerName": "Hardik Pandya",
+    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
+    "Origin": "India",
+    "PlayerType": "All-Rounder",
+    "BowlingStyle": "Right-arm medium-fast",
+    "battingStyle": "Right-hand bat",
+    "Price": "15 Cr"
+  },
+  {
+    "PlayerName": "Kagiso Rabada",
+    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
+    "Origin": "South Africa",
+    "PlayerType": "Bowler",
+    "BowlingStyle": "Right-arm fast",
+    "battingStyle": "Left-hand bat",
+    "Price": "9.25 Cr"
+  },
+  {
+    "PlayerName": "David Warner",
+    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
+    "Origin": "Australia",
+    "PlayerType": "Batsman",
+    "BowlingStyle": "Right-arm leg break",
+    "battingStyle": "Left-hand bat",
+    "Price": "6.25 Cr"
+  },
+  {
+    "PlayerName": "Ravindra Jadeja",
+    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
+    "Origin": "India",
+    "PlayerType": "All-Rounder",
+    "BowlingStyle": "Left-arm orthodox spin",
+    "battingStyle": "Left-hand bat",
+    "Price": "16 Cr"
+  },
+  {
+    "PlayerName": "Trent Boult",
+    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
+    "Origin": "New Zealand",
+    "PlayerType": "Bowler",
+    "BowlingStyle": "Left-arm fast-medium",
+    "battingStyle": "Right-hand bat",
+    "Price": "8 Cr"
+  }
+]
