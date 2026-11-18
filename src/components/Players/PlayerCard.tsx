@@ -1,8 +1,37 @@
 import { FaUser, FaMapMarkerAlt } from "react-icons/fa";
 import { GiBowlingPin, GiCricketBat } from "react-icons/gi";
 import type { Iplayer } from "../../types/Player";
+import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "react-toastify";
 
-const PlayerCard = ({ player }: { player: Iplayer }) => {
+interface IPlayerCardProps {
+  player : Iplayer;
+  coin : number;
+  setCoin : Dispatch<SetStateAction<number>>;
+}
+
+const PlayerCard = ({ player , coin, setCoin }: IPlayerCardProps ) => {
+  const [isSelected, setIsSelected] = useState(false);
+
+  const handleSelectPlayer = () => {
+    if (isSelected) return;
+
+    const price = Number(player.Price);
+    if (!Number.isFinite(price) || price < 0) {
+      toast.error("Player price is invalid");
+      return;
+    }
+
+    if (coin < price) {
+      toast.error("coin is not enough for purchase");
+      return;
+    }
+
+    setCoin((currentCoin) => currentCoin - price);
+    setIsSelected(true);
+    toast.success(`${player.PlayerName} is purchased successfully`);
+  }
+
   return (
     <div className="group card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out border border-base-200 hover:border-primary/30 hover:-translate-y-1 overflow-hidden">
       {/* Image Section */}
@@ -81,8 +110,14 @@ const PlayerCard = ({ player }: { player: Iplayer }) => {
               {player.Price}
             </p>
           </div>
-          <button className="btn btn-primary btn-sm sm:btn-md rounded-full shadow-md hover:shadow-lg transition-shadow">
-            Choose Player
+          <button
+            type="button"
+            onClick={handleSelectPlayer}
+            className={`btn btn-sm sm:btn-md rounded-full shadow-md hover:shadow-lg transition-shadow ${isSelected ? "btn-success" : "btn-primary"
+            }`}
+            disabled={isSelected}
+          >
+            {isSelected ? "Selected" : "Choose Player"}
           </button>
         </div>
       </div>
