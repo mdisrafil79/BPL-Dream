@@ -1,92 +1,110 @@
 [
   {
-    "PlayerName": "Virat Kohli",
-    "PlayerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/383500/383539.jpg",
-    "Origin": "India",
-    "PlayerType": "Batsman",
-    "BowlingStyle": "Right-arm medium",
-    "battingStyle": "Right-hand bat",
-    "Price": "600"
-  },
-  {
-    "PlayerName": "Ben Stokes",
-    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
-    "Origin": "England",
-    "PlayerType": "All-Rounder",
-    "BowlingStyle": "Right-arm fast-medium",
+    "PlayerName": "Najmul Hossain Shanto",
+    "PlayerImg": "https://images.news18.com/ibnlive/uploads/2023/12/najmul-hossain-shanto-afp-2023-12-5aa7d71ee206b9521ad6c5e434bed5a5.jpg",
+    "Origin": "Bangladesh",
+    "PlayerType": "Batter",
+    "BowlingStyle": "Right-arm off break",
     "battingStyle": "Left-hand bat",
-    "Price": "600"
+    "Price": "500"
   },
   {
-    "PlayerName": "Jasprit Bumrah",
-    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
-    "Origin": "India",
+    "PlayerName": "Tanzid Hasan Tamim",
+    "PlayerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_800,q_50/lsci/db/PICTURES/CMS/414700/414711.6.jpg",
+    "Origin": "Bangladesh",
+    "PlayerType": "Opening Batter",
+    "BowlingStyle": "",
+    "battingStyle": "Left-hand bat",
+    "Price": "500"
+  },
+  {
+    "PlayerName": "Mahfijul Islam",
+    "PlayerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNb6N-CIUvFR4APARezLsYbqGsWkNm9GOKkorBja_7OMw_EqTSqv9Md_NZ&s=10",
+    "Origin": "Bangladesh",
+    "PlayerType": "Opening Batter",
+    "BowlingStyle": "",
+    "battingStyle": "Right-hand bat",
+    "Price": "500"
+  },
+  {
+    "PlayerName": "Mominul Haque",
+    "PlayerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjxd2hDN-LqQ2Bjrwx2hJv_MAvWcWH9n_Fm2bHU4gPPrya6OxS3VTelS_3&s=10",
+    "Origin": "Bangladesh",
+    "PlayerType": "Batter",
+    "BowlingStyle": "Left-arm orthodox",
+    "battingStyle": "Left-hand bat",
+    "Price": "500"
+  },
+  {
+    "PlayerName": "Mushfiqur Rahim",
+    "PlayerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAWO8VamgvfJrv-Jg1E6fHsA_4gm1PCvl2zYnT1cszLQ&s",
+    "Origin": "Bangladesh",
+    "PlayerType": "Wicketkeeper Batter",
+    "BowlingStyle": "",
+    "battingStyle": "Right-hand bat",
+    "Price": "500"
+  },
+  {
+    "PlayerName": "Towhid Hridoy",
+    "PlayerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtNS5TgS3RLfqpb6CwUSmqD26In-ytVliemHlHJ9iVKp7RuMBGvDB2ujA&s=10",
+    "Origin": "Bangladesh",
+    "PlayerType": "Batter",
+    "BowlingStyle": "Right-arm off break",
+    "battingStyle": "Right-hand bat",
+    "Price": "500"
+  },
+  {
+    "PlayerName": "Litton Das",
+    "PlayerImg": "https://pbs.twimg.com/profile_images/1045979347465646080/y3vwxS7L_400x400.jpg",
+    "Origin": "Bangladesh",
+    "PlayerType": "Wicketkeeper Batter",
+    "BowlingStyle": "",
+    "battingStyle": "Right-hand bat",
+    "Price": "500"
+  },
+  {
+    "PlayerName": "Mehidy Hasan Miraz",
+    "PlayerImg": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/63875.png",
+    "Origin": "Bangladesh",
+    "PlayerType": "Allrounder",
+    "BowlingStyle": "Right-arm off break",
+    "battingStyle": "Right-hand bat",
+    "Price": "500"
+  },
+  {
+    "PlayerName": "Taijul Islam",
+    "PlayerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq8yKp4U4FioMnuBlCQMgXLUJxjoGHodJpZhtOHpvfLBS6HAsLfrUnkUT8&s=10",
+    "Origin": "Bangladesh",
+    "PlayerType": "Bowler",
+    "BowlingStyle": "Left-arm orthodox",
+    "battingStyle": "Left-hand bat",
+    "Price": "500"
+  },
+  {
+    "PlayerName": "Taskin Ahmed",
+    "PlayerImg": "https://i.pinimg.com/736x/af/27/b2/af27b2c89f840b3d17639d0654994989.jpg",
+    "Origin": "Bangladesh",
     "PlayerType": "Bowler",
     "BowlingStyle": "Right-arm fast",
-    "battingStyle": "Right-hand bat",
-    "Price": "600"
-  },
-  {
-    "PlayerName": "Rashid Khan",
-    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
-    "Origin": "Afghanistan",
-    "PlayerType": "Bowler",
-    "BowlingStyle": "Right-arm leg break",
-    "battingStyle": "Right-hand bat",
-    "Price": "600"
-  },
-  {
-    "PlayerName": "Jos Buttler",
-    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
-    "Origin": "England",
-    "PlayerType": "Wicket-Keeper Batsman",
-    "BowlingStyle": "None",
-    "battingStyle": "Right-hand bat",
-    "Price": "600"
-  },
-  {
-    "PlayerName": "Hardik Pandya",
-    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
-    "Origin": "India",
-    "PlayerType": "All-Rounder",
-    "BowlingStyle": "Right-arm medium-fast",
-    "battingStyle": "Right-hand bat",
-    "Price": "600"
-  },
-  {
-    "PlayerName": "Kagiso Rabada",
-    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
-    "Origin": "South Africa",
-    "PlayerType": "Bowler",
-    "BowlingStyle": "Right-arm fast",
     "battingStyle": "Left-hand bat",
-    "Price": "600"
+    "Price": "500"
   },
   {
-    "PlayerName": "David Warner",
-    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
-    "Origin": "Australia",
-    "PlayerType": "Batsman",
-    "BowlingStyle": "Right-arm leg break",
-    "battingStyle": "Left-hand bat",
-    "Price": "600"
-  },
-  {
-    "PlayerName": "Ravindra Jadeja",
-    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
-    "Origin": "India",
-    "PlayerType": "All-Rounder",
-    "BowlingStyle": "Left-arm orthodox spin",
-    "battingStyle": "Left-hand bat",
-    "Price": "600"
-  },
-  {
-    "PlayerName": "Trent Boult",
-    "PlayerImg": "https://c7.alamy.com/comp/JF834X/taskin-ahmed-bangladesh-JF834X.jpg",
-    "Origin": "New Zealand",
+    "PlayerName": "Hasan Mahmud",
+    "PlayerImg": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/67672.png",
+    "Origin": "Bangladesh",
     "PlayerType": "Bowler",
-    "BowlingStyle": "Left-arm fast-medium",
+    "BowlingStyle": "Right-arm fast medium",
     "battingStyle": "Right-hand bat",
-    "Price": "600"
+    "Price": "500"
+  },
+  {
+    "PlayerName": "Ebadot Hossain",
+    "PlayerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRplltDBjPlyEAvkJMYj_o8MtHeFgXIDVn50BGrdfI3f8EH_EMIT9ODgaQ&s=10",
+    "Origin": "Bangladesh",
+    "PlayerType": "Bowler",
+    "BowlingStyle": "Right-arm fast medium",
+    "battingStyle": "Right-hand bat",
+    "Price": "500"
   }
 ]

@@ -1,47 +1,94 @@
-import { use, useState, type Dispatch, type SetStateAction } from 'react';
-import type { Iplayer } from '../../types/Player';
-import AvailablePlayers from './AbailablePlayers';
-import SelectedPlayers from './SelectedPlayers';
+﻿import { useState } from 'react'
+import type { Iplayer } from '../../types/Player'
+import { MAX_SELECTED_PLAYERS } from '../../constants'
+import AvailablePlayers from './AvailablePlayers'
+import SelectedPlayers from './SelectedPlayers'
 
 interface PlayersProps {
-  playersPromise: Promise<Iplayer[]>;
-  coin : number;
-  setCoin : Dispatch<SetStateAction<number>>;
-  selectedPlayers : object[];
-  setSelectedPlayers: Dispatch<SetStateAction<object[]>>;
+  players: Iplayer[]
+  selectedPlayers: Iplayer[]
+  onSelect: (player: Iplayer) => void
+  onRemove: (player: Iplayer) => void
 }
 
-const Players = ({ playersPromise , coin , setCoin }: PlayersProps) => {
-  const players = use(playersPromise);
-  const [buttonType, setButtonType]  = useState("available")
-  const [SelectedPlayers , setSelectedPlayers] = useState({});
-  console.log(buttonType)
+type TabType = 'available' | 'selected'
 
-  const handleUpdateBtnType = (type : "available" | "selected") => {
-    setButtonType(type)
-  }
+const Players = ({
+  players,
+  selectedPlayers,
+  onSelect,
+  onRemove,
+}: PlayersProps) => {
+  const [tab, setTab] = useState<TabType>('available')
+
+  const availablePlayers = players.filter(
+    (player) =>
+      !selectedPlayers.some((item) => item.PlayerName === player.PlayerName),
+  )
+
+  const heading =
+    tab === 'available'
+      ? 'Available Players'
+      : `Selected Player (${selectedPlayers.length}/${MAX_SELECTED_PLAYERS})`
+
+  const tabButtonClass = (isActive: boolean) =>
+    [
+      'px-4 py-2 text-[13px] font-medium transition-colors sm:px-5',
+      isActive
+        ? 'bg-neon font-semibold text-[#101010]'
+        : 'bg-white text-neutral-500 hover:text-neutral-800',
+    ].join(' ')
 
   return (
-    <div id="players" className='container mx-auto scroll-mt-8'>
-      <div className='flex justify-between gap-4'>
-        <h2 className='font-bold text-xl'>{buttonType === "available" ? "Available Players" : "SelectedPlayers"}</h2>
-        <div>
+    <section
+      id="players"
+      className="mx-auto w-[92%] max-w-[1440px] scroll-mt-6 pt-12 sm:pt-14 lg:w-[82%] lg:pt-16"
+    >
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <h2 className="text-[clamp(20px,1.9vw,30px)] font-bold tracking-tight text-neutral-900">
+          {heading}
+        </h2>
+
+        <div
+          className="flex overflow-hidden rounded-xl border border-neutral-200 bg-white"
+          role="tablist"
+          aria-label="Player lists"
+        >
           <button
-          onClick={()=>handleUpdateBtnType("available")}
-           className={`btn ${buttonType === "available" ? "btn-success" : ""} rounded-r-none`}>Available</button>
+            type="button"
+            role="tab"
+            aria-selected={tab === 'available'}
+            onClick={() => setTab('available')}
+            className={tabButtonClass(tab === 'available')}
+          >
+            Available
+          </button>
           <button
-          onClick={()=>handleUpdateBtnType("selected")}
-           className={`btn ${buttonType === "selected" ? "btn-success" : ""} rounded-l-none`}>Selected</button>
+            type="button"
+            role="tab"
+            aria-selected={tab === 'selected'}
+            onClick={() => setTab('selected')}
+            className={tabButtonClass(tab === 'selected')}
+          >
+            Selected ({selectedPlayers.length})
+          </button>
         </div>
       </div>
-      {buttonType === "available" ? (<AvailablePlayers players={players} coin={coin} setCoin={setCoin} selectedPlayers={SelectedPlayers} setSelectedPlayers={setSelectedPlayers} />
-    ) : (<SelectedPlayers
-      selectedPlayers={SelectedPlayers}
-      setSelectedPlayers={setSelectedPlayers}
-    />
-    )}
-    </div>
-  );
-};
 
-export default Players;
+      <div className="mt-10">
+        {tab === 'available' ? (
+          <AvailablePlayers players={availablePlayers} onSelect={onSelect} />
+        ) : (
+          <SelectedPlayers
+            players={selectedPlayers}
+            onRemove={onRemove}
+            onAddMore={() => setTab('available')}
+          />
+        )}
+      </div>
+    </section>
+  )
+}
+
+export default Players
+
